@@ -1,316 +1,71 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lanchas Maria Eduarda Turismo</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-scroll-behavior:smooth;
-}
-
-body{
-background:#f5f7f5;
-color:#222;
-}
-
-header{
-position:fixed;
-top:0;
-width:100%;
-background:#0f9d58;
-padding:15px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-z-index:1000;
-}
-
-.logo{
-color:white;
-font-size:1.4rem;
-font-weight:700;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-font-weight:500;
-}
-
-.hero{
-height:100vh;
-background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
-url('pedra furada.jpeg');
-background-size:cover;
-background-position:center;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:20px;
-}
-
-.hero h1{
-font-size:3rem;
-color:white;
-}
-
-.hero p{
-color:white;
-margin-top:15px;
-font-size:1.1rem;
-}
-
-.btn{
-display:inline-block;
-margin-top:25px;
-background:#ffd54f;
-color:#111;
-padding:14px 30px;
-border-radius:40px;
-text-decoration:none;
-font-weight:bold;
-}
-
-section{
-padding:90px 8%;
-}
-
-.section-title{
-text-align:center;
-font-size:2rem;
-margin-bottom:40px;
-color:#0f9d58;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-}
-
-.card{
-background:white;
-border-radius:20px;
-overflow:hidden;
-box-shadow:0 5px 20px rgba(0,0,0,.1);
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
-}
-
-.card img{
-width:100%;
-height:250px;
-object-fit:cover;
-display:block;
-}
-
-.card-content{
-padding:20px;
-}
-
-.card h3{
-color:#0f9d58;
-margin-bottom:10px;
-}
-
-footer{
-background:#111;
-color:white;
-text-align:center;
-padding:40px 20px;
-}
-
-.whatsapp{
-position:fixed;
-right:20px;
-bottom:20px;
-background:#25D366;
-width:65px;
-height:65px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:30px;
-text-decoration:none;
-color:white;
-box-shadow:0 5px 20px rgba(0,0,0,.3);
-}
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:2rem;
-}
-
-nav{
-display:none;
-}
-
-}
-</style>
-</head>
-<body>
-
-<header>
-<div class="logo">🚤 Maria Eduarda Turismo</div>
-
-<nav>
-<a href="#lanchas">Lanchas</a>
-<a href="#destinos">Passeios</a>
-<a href="#contato">Contato</a>
-</nav>
-</header>
-
-<section class="hero">
-
-<div>
-<h1>Passeios pelas Ilhas da Baía de Camamu</h1>
-
-<p>
-Conforto, segurança e experiências inesquecíveis nas águas paradisíacas da Bahia.
-</p>
-
-<a href="#destinos" class="btn">
-Ver Passeios
-</a>
-</div>
-
-</section>
-
-<section id="lanchas">
-
-<h2 class="section-title">
-Nossa Frota
-</h2>
-
-<div class="cards">
-
-<div class="card">
-<img src="lancha1.jpg.jpeg" alt="Maria Eduarda I">
-<div class="card-content">
-<h3>Maria Eduarda I</h3>
-<p>Lancha confortável para passeios inesquecíveis.</p>
-</div>
-</div>
-
-<div class="card">
-<img src="lancha2.jpg.jpeg" alt="Maria Eduarda II">
-<div class="card-content">
-<h3>Maria Eduarda II</h3>
-<p>Magna 26 pés com muito conforto e segurança.</p>
-</div>
-</div>
-
-<div class="card">
-<img src="lancha3.jpg.jpeg" alt="Maria Eduarda III">
-<div class="card-content">
-<h3>Maria Eduarda III</h3>
-<p>Ideal para grupos e famílias.</p>
-</div>
-</div>
-
-</div>
-
-</section>
-
 <section id="destinos">
 
 <h2 class="section-title">
-Passeios e Destinos
+Roteiro Completo do Passeio
 </h2>
 
 <div class="cards">
-
-<div class="card">
-<img src="pedra furada.jpeg" alt="Pedra Furada">
-<div class="card-content">
-<h3>🏝 Pedra Furada</h3>
-<p>Um dos cartões-postais mais famosos da Baía de Camamu.</p>
-</div>
-</div>
 
 <div class="card">
 <img src="campinhos.jpeg" alt="Campinhos">
 <div class="card-content">
-<h3>🌴 Campinhos</h3>
-<p>Praia paradisíaca com águas cristalinas.</p>
+<h3>🏝 Campinhos</h3>
+<p>
+Praia paradisíaca com águas cristalinas, perfeita para banho e relaxamento.
+</p>
 </div>
 </div>
 
 <div class="card">
-<img src="ilha do goió.jpeg" alt="Ilha do Goió">
+<img src="ponta-do-muta.jpeg" alt="Ponta do Mutá">
+<div class="card-content">
+<h3>🌅 Ponta do Mutá</h3>
+<p>
+Um dos lugares mais bonitos da região, com paisagens incríveis e mar tranquilo.
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="goio.jpeg" alt="Ilha do Goió">
 <div class="card-content">
 <h3>🌊 Ilha do Goió</h3>
-<p>Um cenário perfeito para relaxar e aproveitar o mar.</p>
+<p>
+Águas calmas e cristalinas, ideal para aproveitar a natureza e descansar.
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="pedra-furada.jpeg" alt="Pedra Furada">
+<div class="card-content">
+<h3>🪨 Pedra Furada</h3>
+<p>
+Um dos cartões-postais mais famosos da Baía de Camamu.
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="sapinhos.jpeg" alt="Ilha dos Sapinhos">
+<div class="card-content">
+<h3>🍤 Sapinhos</h3>
+<p>
+Parada para almoço opcional em restaurantes tradicionais à beira-mar.
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="tremembe.jpeg" alt="Cachoeira de Tremembé">
+<div class="card-content">
+<h3>💦 Cachoeira de Tremembé</h3>
+<p>
+Uma das únicas cachoeiras do Brasil que deságua diretamente no mar.
+</p>
 </div>
 </div>
 
 </div>
 
 </section>
-
-<footer id="contato">
-
-<h2>Lanchas Maria Eduarda Turismo</h2>
-
-<br>
-
-<p>📍 Camamu - Bahia</p>
-
-<br>
-
-<p>
-📞 73 98114-3616
-<br>
-📞 73 99928-6507
-</p>
-
-<br>
-
-<p>
-Instagram: @passeio_das_ilhas_camamu_ba
-</p>
-
-</footer>
-
-<a class="whatsapp" id="whats" href="#">
-💬
-</a>
-
-<script>
-
-const numeros = [
-"5573981143616",
-"5573999286507"
-];
-
-document.getElementById("whats").onclick = () => {
-
-const numero =
-numeros[Math.floor(Math.random()*numeros.length)];
-
-window.open(
-`https://wa.me/${numero}?text=Olá! Quero reservar um passeio.`,
-'_blank'
-);
-
-};
-
-</script>
-
-</body>
-</html>
