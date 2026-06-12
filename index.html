@@ -1,478 +1,449 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lanchas Maria Eduarda Turismo | Passeios na Baía de Camamu, Bahia</title>
-    
-    <!-- Meta Tags de SEO essenciais -->
-    <meta name="description" content="Explore as ilhas da Baía de Camamu com a Lanchas Maria Eduarda. Passeios exclusivos para a Ilha do Goió, Campinhos, Pedra Furada e Cachoeira de Tremembé.">
-    <meta name="keywords" content="Aluguel de lancha Camamu, passeio de lancha bahia, baia de camamu, marau, cachoeira de tremembe, pedra furada, turismo náutico">
-    <meta name="robots" content="index, follow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lanchas Maria Eduarda Turismo | Baía de Camamu</title>
 
-    <!-- Fontes pré-carregadas para melhor performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+<!-- Fontes elegantes e modernas -->
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
 
-    <style>
-        :root {
-            --primary: #0a5c36;      /* Verde oceano sofisticado */
-            --accent: #dfb143;       /* Dourado areia/sol */
-            --dark: #1c2826;         /* Grafite suave para textos */
-            --light: #f9fbf9;        /* Off-white de fundo */
-            --card-shadow: 0 15px 35px rgba(10,92,54,0.06);
-        }
+<style>
+:root {
+    --primary: #0a5c36;      /* Verde oceano sofisticado */
+    --accent: #dfb143;       /* Dourado areia/sol */
+    --dark: #1c2826;         /* Grafite suave para textos */
+    --light: #f9fbf9;        /* Off-white de fundo */
+    --card-shadow: 0 15px 35px rgba(10,92,54,0.06);
+}
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Outfit', sans-serif;
-            scroll-behavior: smooth;
-        }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    scroll-behavior: smooth;
+}
 
-        body {
-            background: var(--light);
-            color: var(--dark);
-            line-height: 1.6;
-            padding-top: 80px; /* Evita que o header fixo cubra o topo da Hero */
-        }
+body{
+    background: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+}
 
-        /* Header elegante com efeito de vidro */
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: rgba(10, 92, 54, 0.95);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            padding: 20px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 1000;
-            box-shadow: 0 4px 30px rgba(0,0,0,0.05);
-        }
+/* Header elegante com efeito de vidro */
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(10, 92, 54, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.05);
+}
 
-        .logo {
-            color: white;
-            font-size: 1.3rem;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
+.logo{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 
-        .logo span {
-            color: var(--accent);
-        }
+.logo span {
+    color: var(--accent);
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 30px;
-            font-weight: 600;
-            font-size: 0.95rem;
-            transition: 0.3s;
-            position: relative;
-        }
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: 0.3s;
+    position: relative;
+}
 
-        nav a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -5px;
-            left: 0;
-            background-color: var(--accent);
-            transition: 0.3s;
-        }
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--accent);
+    transition: 0.3s;
+}
 
-        nav a:hover::after {
-            width: 100%;
-        }
+nav a:hover::after {
+    width: 100%;
+}
 
-        /* Hero Section ajustada para cross-browser */
-        .hero {
-            height: calc(100vh - 80px);
-            min-height: 500px;
-            background: linear-gradient(rgba(10, 50, 30, 0.55), rgba(10, 25, 15, 0.7)), url('mds.jpeg') no-repeat center center;
-            background-size: cover;
-            /* background-attachment: fixed removido para evitar bugs visuais em navegadores mobile */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 20px;
-        }
+/* Hero Section com tipografia premium */
+.hero{
+    height: 100vh;
+    background: linear-gradient(rgba(10, 50, 30, 0.55), rgba(10, 25, 15, 0.7)), url('mds.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
 
-        .hero-content {
-            max-width: 800px;
-        }
+.hero-content {
+    max-width: 800px;
+}
 
-        .hero h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3.5rem;
-            color: white;
-            font-weight: 600;
-            line-height: 1.2;
-        }
+.hero h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    color: white;
+    font-weight: 600;
+    line-height: 1.2;
+}
 
-        .hero p {
-            color: rgba(255,255,255,0.9);
-            margin-top: 20px;
-            font-size: 1.2rem;
-            font-weight: 300;
-            letter-spacing: 0.5px;
-        }
+.hero p{
+    color: rgba(255,255,255,0.9);
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
 
-        .btn {
-            display: inline-block;
-            margin-top: 35px;
-            background: var(--accent);
-            color: var(--dark);
-            padding: 16px 40px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 800;
-            text-transform: uppercase;
-            font-size: 0.85rem;
-            letter-spacing: 1px;
-            box-shadow: 0 10px 20px rgba(223, 177, 67, 0.3);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
+.btn{
+    display: inline-block;
+    margin-top: 35px;
+    background: var(--accent);
+    color: var(--dark);
+    padding: 16px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    box-shadow: 0 10px 20px rgba(223, 177, 67, 0.3);
+    transition: 0.3s transform, 0.3s box-shadow;
+}
 
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 25px rgba(223, 177, 67, 0.4);
-        }
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(223, 177, 67, 0.4);
+}
 
-        /* Seções e Títulos */
-        section {
-            padding: 100px 8%;
-        }
+/* Seções e Títulos */
+section{
+    padding: 100px 8%;
+}
 
-        .section-title {
-            text-align: center;
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            margin-bottom: 50px;
-            color: var(--primary);
-            position: relative;
-        }
+.section-title{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: var(--primary);
+    position: relative;
+}
 
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 60px;
-            height: 3px;
-            background: var(--accent);
-            margin: 15px auto 0 auto;
-            border-radius: 2px;
-        }
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--accent);
+    margin: 15px auto 0 auto;
+    border-radius: 2px;
+}
 
-        /* Grid de Cards */
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 35px;
-        }
+/* Grid de Cards Humano e Fluido */
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 35px;
+}
 
-        .card {
-            background: white;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: var(--card-shadow);
-            transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s;
-            border: 1px solid rgba(10,92,54,0.03);
-        }
+.card{
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: 1px solid rgba(10,92,54,0.03);
+}
 
-        .card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 25px 50px rgba(10,92,54,0.12);
-        }
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px rgba(10,92,54,0.12);
+}
 
-        .card-img-wrapper {
-            width: 100%;
-            height: 260px;
-            overflow: hidden;
-            background: #e1e7e4; /* Skeleton background enquanto a imagem carrega */
-        }
+.card-img-wrapper {
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+}
 
-        .card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
 
-        .card:hover img {
-            transform: scale(1.06);
-        }
+.card:hover img {
+    transform: scale(1.06);
+}
 
-        .card-content {
-            padding: 28px;
-        }
+.card-content{
+    padding: 28px;
+}
 
-        .card h3 {
-            color: var(--primary);
-            font-family: 'Playfair Display', serif;
-            font-size: 1.4rem;
-            margin-bottom: 12px;
-        }
+.card h3{
+    color: var(--primary);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+}
 
-        .card p {
-            color: #555;
-            font-size: 0.95rem;
-            font-weight: 300;
-        }
+.card p {
+    color: #666;
+    font-size: 0.95rem;
+    font-weight: 300;
+}
 
-        /* Footer Modernizado */
-        footer {
-            background: var(--dark);
-            color: rgba(255,255,255,0.8);
-            text-align: center;
-            padding: 60px 20px;
-            border-top: 4px solid var(--accent);
-        }
+/* Footer Modernizado */
+footer{
+    background: var(--dark);
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+    padding: 60px 20px;
+    border-top: 4px solid var(--accent);
+}
 
-        footer h2 {
-            font-family: 'Playfair Display', serif;
-            color: white;
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-        }
+footer h2 {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
 
-        footer a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 600;
-            transition: opacity 0.2s;
-        }
-        
-        footer a:hover {
-            opacity: 0.8;
-        }
+footer a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+}
 
-        .footer-info {
-            max-width: 400px;
-            margin: 20px auto;
-            font-size: 0.95rem;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            padding-top: 20px;
-        }
+.footer-info {
+    max-width: 400px;
+    margin: 20px auto;
+    font-size: 0.95rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+}
 
-        /* Botão do WhatsApp flutuante */
-        .whatsapp {
-            position: fixed;
-            right: 30px;
-            bottom: 30px;
-            background: #25D366;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
-            z-index: 999;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
+/* Botão do WhatsApp customizado e com pulso */
+.whatsapp{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background: #25D366;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+    z-index: 999;
+    transition: 0.3s;
+}
 
-        .whatsapp:hover {
-            transform: scale(1.1);
-        }
+.whatsapp:hover {
+    transform: scale(1.1);
+}
 
-        .whatsapp svg {
-            width: 32px;
-            height: 32px;
-            fill: white;
-        }
+.whatsapp svg {
+    width: 32px;
+    height: 32px;
+    fill: white;
+}
 
-        /* Responsividade */
-        @media(max-width:768px){
-            body {
-                padding-top: 70px;
-            }
-            header {
-                padding: 15px 5%;
-            }
-            .hero {
-                height: calc(100vh - 70px);
-            }
-            .hero h1 {
-                font-size: 2.3rem;
-            }
-            .hero p {
-                font-size: 1rem;
-            }
-            section {
-                padding: 70px 5%;
-            }
-            nav {
-                display: flex;
-                gap: 15px;
-            }
-            nav a {
-                margin: 0;
-                font-size: 0.85rem;
-            }
-        }
-    </style>
+/* Responsividade Real */
+@media(max-width:768px){
+    header {
+        padding: 15px 5%;
+    }
+    .hero h1{
+        font-size: 2.3rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    section {
+        padding: 70px 5%;
+    }
+    nav {
+        display: flex;
+        gap: 15px;
+    }
+    nav a {
+        margin: 0;
+        font-size: 0.85rem;
+    }
+}
+</style>
 </head>
 <body>
 
 <header>
-    <div class="logo">M. Eduarda <span>Turismo</span></div>
-    <nav aria-label="Navegação principal">
-        <a href="#lanchas">Frota</a>
-        <a href="#destinos">Passeios</a>
-        <a href="#contato">Contato</a>
-    </nav>
+    <div class="logo">M. Eduarda <span>Turismo</span></div>
+    <nav>
+        <a href="#lanchas">Frota</a>
+        <a href="#destinos">Passeios</a>
+        <a href="#contato">Contato</a>
+    </nav>
 </header>
 
-<main>
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Passeios pelas Ilhas da Baía de Camamu</h1>
-            <p>Conforto, segurança e experiências exclusivas nas águas mais paradisíacas da Bahia.</p>
-            <a href="#destinos" class="btn">Explorar Roteiros</a>
-        </div>
-    </section>
+<section class="hero">
+    <div class="hero-content">
+        <h1>Passeios pelas Ilhas da Baia de Camamu</h1>
+        <p>Conforto, segurança e experiências exclusivas nas águas mais paradisíacas da Bahia.</p>
+        <a href="#destinos" class="btn">Explorar Roteiros</a>
+    </div>
+</section>
 
-    <section id="lanchas">
-        <h2 class="section-title">Nossa Frota</h2>
-        <div class="cards">
-            <div class="card">
-                <div class="card-img-wrapper">
-                    <!-- Removida a extensão duplicada .jpg.jpeg se for apenas erro de digitação -->
-                    <img src="lancha1.jpg" alt="Lancha Maria Eduarda I navegando" loading="lazy">
-                </div>
-                <div class="card-content">
-                    <h3>Maria Eduarda I</h3>
-                    <p>Nossa lancha clássica, confortável e perfeita para navegar com tranquilidade pelas ilhas.</p>
-                </div>
-            </div>
+<section id="lanchas">
+    <h2 class="section-title">Nossa Frota</h2>
+    <div class="cards">
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="lancha1.jpg.jpeg" alt="Maria Eduarda I">
+            </div>
+            <div class="card-content">
+                <h3>Maria Eduarda I</h3>
+                <p>Nossa lancha clássica, confortável e perfeita para navegar com tranquilidade pelas ilhas.</p>
+            </div>
+        </div>
 
-            <div class="card">
-                <div class="card-img-wrapper">
-                    <img src="lancha2.jpg" alt="Lancha Maria Eduarda II modelo Magna de 26 pés" loading="lazy">
-                </div>
-                <div class="card-content">
-                    <h3>Maria Eduarda II</h3>
-                    <p>Modelo Magna de 26 pés. Cabine espaçosa, alta estabilidade e segurança para seu grupo.</p>
-                </div>
-            </div>
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="lancha2.jpg.jpeg" alt="Maria Eduarda II">
+            </div>
+            <div class="card-content">
+                <h3>Maria Eduarda II</h3>
+                <p>Modelo Magna de 26 pés. Cabine espaçosa, alta estabilidade e segurança para seu grupo.</p>
+            </div>
+        </div>
 
-            <div class="card">
-                <div class="card-img-wrapper">
-                    <img src="lancha3.jpg" alt="Lancha Maria Eduarda III ampla para eventos" loading="lazy">
-                </div>
-                <div class="card-content">
-                    <h3>Maria Eduarda III</h3>
-                    <p>Ampla e moderna, configurada sob medida para passeios de famílias grandes e eventos.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="lancha3.jpg.jpeg" alt="Maria Eduarda III">
+            </div>
+            <div class="card-content">
+                <h3>Maria Eduarda III</h3>
+                <p>Ampla e moderna, configurada sob medida para passeios de famílias grandes e eventos.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <section id="destinos">
-        <h2 class="section-title">Paradas Exclusivas</h2>
-        <div class="cards">
-            <div class="card">
-                <div class="card-img-wrapper">
-                    <img src="campinhos.jpeg" alt="Praia de Campinhos na Baía de Camamu" loading="lazy">
-                </div>
-                <div class="card-content">
-                    <h3>Campinhos</h3>
-                    <p>Águas calmas e rasas como uma grande piscina natural. O lugar ideal para relaxar e praticar snorkel.</p>
-                </div>
-            </div>
+<section id="destinos">
+    <h2 class="section-title">Paradas Exclusivas</h2>
+    <div class="cards">
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="campinhos.jpeg" alt="Campinhos">
+            </div>
+            <div class="card-content">
+                <h3>Campinhos</h3>
+                <p>Águas calmas e rasas como uma grande piscina natural. O lugar ideal para relaxar e praticar snorkel.</p>
+            </div>
+        </div>
 
-            <div class="card">
-                <div class="card-img-wrapper">
-                    <img src="ponta-do-muta.jpeg" alt="Pôr do sol na Ponta do Mutá" loading="lazy">
-                </div>
-                <div class="card-content">
-                    <h3>Ponta do Mutá</h3>
-                    <p>Famosa por um dos pores do sol mais bonitos do Nordeste e visual de tirar o fôlego.</p>
-                </div>
-            </div>
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="ponta-do-muta.jpeg" alt="Ponta do Mutá">
+            </div>
+            <div class="card-content">
+                <h3>Ponta do Mutá</h3>
+                <p>Famosa por um dos pores do sol mais bonitos do Nordeste e visual de tirar o fôlego.</p>
+            </div>
+        </div>
 
-            <div class="card">
-                <div class="card-img-wrapper">
-                    <img src="ilha do goió.jpeg" alt="Paisagem paradisíaca da Ilha do Goió" loading="lazy">
-                </div>
-                <div class="card-content">
-                    <h3>Ilha do Goió</h3>
-                    <p>Uma ilha charmosa de areia finíssima e mar transparente. Perfeita para desacelerar da rotina.</p>
-                </div>
-            </div>
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="ilha do goió.jpeg" alt="Ilha do Goió">
+            </div>
+            <div class="card-content">
+                <h3>Ilha do Goió</h3>
+                <p>Uma ilha charmosa de areia finíssima e mar transparente. Perfeita para desacelerar da rotina.</p>
+            </div>
+        </div>
 
-            <div class="card">
-                <div class="card-img-wrapper">
-                    <img src="pedra furada.jpeg" alt="Formação rochosa da Ilha da Pedra Furada" loading="lazy">
-                </div>
-                <div class="card-content">
-                    <h3>Pedra Furada</h3>
-                    <p>A intrigante formação rochosa esculpida pela maré que se tornou o cartão-postal da baía.</p>
-                </div>
-            </div>
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="pedra furada.jpeg" alt="Pedra Furada">
+            </div>
+            <div class="card-content">
+                <h3>Pedra Furada</h3>
+                <p>A intrigante formação rochosa esculpida pela maré que se tornou o cartão-postal da baía.</p>
+            </div>
+        </div>
 
-            <div class="card">
-                <div class="card-img-wrapper">
-                    <img src="sapinhos.jpeg" alt="Restaurantes na Ilha dos Sapinhos" loading="lazy">
-                </div>
-                <div class="card-content">
-                    <h3>Sapinhos</h3>
-                    <p>A parada gastronômica oficial do roteiro, com restaurantes rústicos servindo o melhor da culinária baiana.</p>
-                </div>
-            </div>
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="sapinhos.jpeg" alt="Ilha dos Sapinhos">
+            </div>
+            <div class="card-content">
+                <h3>Sapinhos</h3>
+                <p>A parada gastronômica oficial do roteiro, com restaurantes rústicos servindo o melhor da culinária baiana.</p>
+            </div>
+        </div>
 
-            <div class="card">
-                <div class="card-img-wrapper">
-                    <img src="tremembe.jpeg" alt="Queda d'água na Cachoeira de Tremembé" loading="lazy">
-                </div>
-                <div class="card-content">
-                    <h3>Cachoeira de Tremembé</h3>
-                    <p>Um espetáculo raro da natureza: a queda d'água doce deságua direto no encontro com o mar.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="tremembe.jpeg" alt="Cachoeira de Tremembé">
+            </div>
+            <div class="card-content">
+                <h3>Cachoeira de Tremembé</h3>
+                <p>Um espetáculo raro da natureza: a queda d'água doce deságua direto no encontro com o mar.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 <footer id="contato">
-    <h2>Lanchas Maria Eduarda</h2>
-    <p>O melhor do turismo náutico na Bahia.</p>
-    
-    <div class="footer-info">
-        <p>📍 Camamu — BA, Brasil</p>
-        <p style="margin: 10px 0;">
-            📞 <a href="tel:+5573981143616" style="color:inherit;">(73) 98114-3616</a> | 
-            <a href="tel:+5573999286507" style="color:inherit;">(73) 99928-6507</a>
-        </p>
-        <p>Instagram: <a href="https://www.instagram.com/passeio_das_ilhas_camamu_ba/" target="_blank" rel="noopener">@passeio_das_ilhas_camamu_ba</a></p>
-    </div>
+    <h2>Lanchas Maria Eduarda</h2>
+    <p>O melhor do turismo náutico na Bahia.</p>
+    
+    <div class="footer-info">
+        <p>📍 Camamu — BA, Brasil</p>
+        <p style="margin: 10px 0;">📞 (73) 98114-3616 | (73) 99928-6507</p>
+        <p>Instagram: <a href="https://www.instagram.com/passeio_das_ilhas_camamu_ba/" target="_blank">@passeio_das_ilhas_camamu_ba</a></p>
+    </div>
 </footer>
 
-<!-- Botão do WhatsApp -->
+<!-- Botão do WhatsApp com ícone SVG limpo (sem emojis de texto) -->
 <a class="whatsapp" id="whats" href="#" aria-label="Fale conosco no WhatsApp">
-    <svg viewBox="0 0 32 32" aria-hidden="true">
-        <path d="M16 2a13 13 0 0 0-11.3 19.4L3 29l7.8-2A13 13 0 1 0 16 2zm6.9 18.2c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.2-3.8-.8a15.8 15.8 0 0 1-6.6-5.8c-1-1.3-1.6-2.8-1.6-4.3 0-2 1-3 1.4-3.4.4-.3.8-.4 1.1-.4h.3c.3 0 .6 0 .9.6.3.8 1.1 2.7 1.2 2.9.1.2.1.4 0 .6s-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8A9.8 9.8 0 0 0 16 17a8.2 8.2 0 0 0 3.6 2.2c.4.2.6.2.8-.1l.8-1c.2-.3.5-.3.8-.2l2.3 1.1c.3.1.5.3.6.4.1.3.1 1-.2 1.8z"/>
-    </svg>
+    <svg viewBox="0 0 32 32">
+        <path d="M16 2a13 13 0 0 0-11.3 19.4L3 29l7.8-2A13 13 0 1 0 16 2zm6.9 18.2c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.2-3.8-.8a15.8 15.8 0 0 1-6.6-5.8c-1-1.3-1.6-2.8-1.6-4.3 0-2 1-3 1.4-3.4.4-.3.8-.4 1.1-.4h.3c.3 0 .6 0 .9.6.3.8 1.1 2.7 1.2 2.9.1.2.1.4 0 .6s-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8A9.8 9.8 0 0 0 16 17a8.2 8.2 0 0 0 3.6 2.2c.4.2.6.2.8-.1l.8-1c.2-.3.5-.3.8-.2l2.3 1.1c.3.1.5.3.6.4.1.3.1 1-.2 1.8z"/>
+    </svg>
 </a>
 
 <script>
 const numeros = ["5573981143616", "5573999286507"];
 
 document.getElementById("whats").onclick = (e) => {
-    e.preventDefault();
-    const numero = numeros[Math.floor(Math.random() * numeros.length)];
-    const textoEncodado = encodeURIComponent("Olá! Gostaria de saber mais informações sobre os passeios de lancha.");
-    window.open(`https://wa.me/${numero}?text=${textoEncodado}`, '_blank', 'noopener');
+    e.preventDefault();
+    const numero = numeros[Math.floor(Math.random() * numeros.length)];
+    window.open(`https://wa.me/${numero}?text=Olá! Gostaria de saber mais informações sobre os passeios de lancha.`, '_blank');
 };
 </script>
 
