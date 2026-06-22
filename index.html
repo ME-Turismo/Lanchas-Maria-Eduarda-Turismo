@@ -8,170 +8,214 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-scroll-behavior:smooth;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
 }
 
 body{
-background:#f5f7f5;
-color:#222;
+    background:#f5f7f5;
+    color:#222;
 }
 
+/* HEADER */
+
 header{
-position:fixed;
-top:0;
-width:100%;
-background:#0f9d58;
-padding:15px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-z-index:1000;
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#0f9d58;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+    box-shadow:0 3px 10px rgba(0,0,0,.2);
 }
 
 .logo{
-color:white;
-font-size:1.4rem;
-font-weight:700;
+    color:white;
+    font-size:1.4rem;
+    font-weight:700;
+}
+
+nav{
+    display:flex;
+    gap:20px;
 }
 
 nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-font-weight:500;
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
 }
+
+nav a:hover{
+    color:#ffd54f;
+}
+
+/* HERO */
+
 .hero{
-position:relative;
-height:100vh;
-overflow:hidden;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:20px;
+    position:relative;
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:20px;
 }
 
 .hero video{
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-object-fit:cover;
-z-index:-2;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-2;
 }
 
 .hero::before{
-content:'';
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,.5);
-z-index:-1;
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.55);
+    z-index:-1;
 }
+
 .hero h1{
-font-size:3rem;
-color:white;
+    color:white;
+    font-size:3rem;
 }
 
 .hero p{
-color:white;
-margin-top:15px;
-font-size:1.1rem;
+    color:white;
+    margin-top:20px;
+    font-size:1.1rem;
 }
 
 .btn{
-display:inline-block;
-margin-top:25px;
-background:#ffd54f;
-color:#111;
-padding:14px 30px;
-border-radius:40px;
-text-decoration:none;
-font-weight:bold;
-transition:0.3s;
+    display:inline-block;
+    margin-top:25px;
+    background:#ffd54f;
+    color:#111;
+    padding:14px 30px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
 }
 
 .btn:hover{
-transform:scale(1.05);
-box-shadow:0 5px 20px rgba(255,213,79,.5);
+    transform:scale(1.05);
+    box-shadow:0 5px 20px rgba(255,213,79,.5);
 }
 
+/* SEÇÕES */
+
 section{
-padding:90px 8%;
+    padding:90px 8%;
 }
 
 .section-title{
-text-align:center;
-font-size:2rem;
-margin-bottom:40px;
-color:#0f9d58;
+    text-align:center;
+    font-size:2rem;
+    color:#0f9d58;
+    margin-bottom:40px;
 }
 
 .cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
 }
 
 .card{
-background:white;
-border-radius:20px;
-overflow:hidden;
-box-shadow:0 5px 20px rgba(0,0,0,.1);
-transition:0.3s;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    transition:.3s;
 }
 
 .card:hover{
-transform:translateY(-8px) scale(1.02);
+    transform:translateY(-8px) scale(1.02);
 }
+
 .card img{
-width:100%;
-height:250px;
-object-fit:cover;
-display:block;
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    display:block;
 }
 
 .card-content{
-padding:20px;
+    padding:20px;
 }
 
 .card h3{
-color:#0f9d58;
-margin-bottom:10px;
-}footer a{
-color:#ffd54f;
-text-decoration:none;
-font-weight:600;
+    color:#0f9d58;
+    margin-bottom:10px;
+}
+
+/* AVALIAÇÕES */
+
+.avaliacao{
+    text-align:center;
+    font-size:1.1rem;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+footer a{
+    color:#ffd54f;
+    text-decoration:none;
+    font-weight:600;
 }
 
 footer a:hover{
-text-decoration:underline;
+    text-decoration:underline;
 }
 
-.whatsapp{
-position:fixed;
-right:20px;
-bottom:20px;
-background:#25D366;
-width:65px;
-height:65px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:30px;
-text-decoration:none;
-color:white;
-box-shadow:0 5px 20px rgba(0,0,0,.3);
+footer .telefone{
+    color:white;
 }
+
+/* WHATSAPP */
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:65px;
+    height:65px;
+    background:#25D366;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    color:white;
+    text-decoration:none;
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+/* RESPONSIVO */
 
 @media(max-width:768px){
 
@@ -181,8 +225,6 @@ header{
 }
 
 nav{
-    display:flex;
-    gap:15px;
     flex-wrap:wrap;
     justify-content:center;
 }
@@ -191,39 +233,63 @@ nav{
     font-size:2rem;
 }
 
+.hero p{
+    font-size:1rem;
 }
+
+}
+
 </style>
 </head>
+
 <body>
 
 <header>
-<div class="logo">Lanchas Maria Eduarda Turismo</div>
+
+<div class="logo">
+Lanchas Maria Eduarda Turismo
+</div>
 
 <nav>
 <a href="#lanchas">Lanchas</a>
 <a href="#destinos">Passeios</a>
+<a href="#avaliacoes">Avaliações</a>
 <a href="#contato">Contato</a>
 </nav>
+
 </header>
-  <section class="hero">
+
+<!-- HERO -->
+
+<section class="hero">
 
 <video autoplay muted loop playsinline>
     <source src="que isso.mp4" type="video/mp4">
 </video>
 
 <div>
-    <h1>Passeios pelas Ilhas da Baía de Camamu</h1>
 
-    <p>
-    Conforto, segurança e experiências inesquecíveis nas águas paradisíacas da Bahia.
-    </p>
+<h1>
+Passeios pelas Ilhas da Baía de Camamu
+</h1>
 
-    <a href="#destinos" class="btn">
-    Ver Passeios
-    </a>
+<p>
+Conforto, segurança e experiências inesquecíveis nas águas paradisíacas da Bahia.
+</p>
+
+<a href="#destinos" class="btn">
+Ver Passeios
+</a>
+
+<a href="#contato" class="btn">
+Solicitar Orçamento
+</a>
+
 </div>
 
 </section>
+
+<!-- LANCHAS -->
 
 <section id="lanchas">
 
@@ -261,77 +327,108 @@ Nossa Frota
 
 </section>
 
+<!-- DESTINOS -->
+
 <section id="destinos">
 
 <h2 class="section-title">
-Paradas
+Paradas do Passeio
 </h2>
 
 <div class="cards">
 
 <div class="card">
-<img src="campinhos.jpeg" alt="Campinhos">
+<img src="campinhos.jpeg">
 <div class="card-content">
-<h3> Campinhos</h3>
-<p>
-Praia paradisíaca com águas calmas, perfeita para banho e relaxamento.
-</p>
+<h3>Campinhos</h3>
+<p>Praia paradisíaca com águas calmas e cristalinas.</p>
 </div>
 </div>
 
 <div class="card">
-<img src="ponta-do-muta.jpeg" alt="Ponta do Mutá">
+<img src="ponta-do-muta.jpeg">
 <div class="card-content">
-<h3> Ponta do Mutá</h3>
-<p>
-Um dos lugares mais bonitos da região, com paisagens incríveis e mar tranquilo.
-</p>
+<h3>Ponta do Mutá</h3>
+<p>Paisagens incríveis e um dos pores do sol mais bonitos da região.</p>
 </div>
 </div>
 
 <div class="card">
-<img src="ilha do goió.jpeg" alt="Ilha do Goió">
+<img src="ilha do goió.jpeg">
 <div class="card-content">
-<h3> Ilha do Goió</h3>
-<p>
-Águas calmas e cristalinas, ideal para aproveitar a natureza e descansar.
-</p>
+<h3>Ilha do Goió</h3>
+<p>Águas tranquilas e perfeitas para relaxar.</p>
 </div>
 </div>
 
 <div class="card">
-<img src="pedra furada.jpeg" alt="Pedra Furada">
+<img src="pedra furada.jpeg">
 <div class="card-content">
-<h3> Pedra Furada</h3>
-<p>
-Um dos cartões-postais mais famosos da Baía de Camamu.
-</p>
+<h3>Pedra Furada</h3>
+<p>Um dos cartões-postais da Baía de Camamu.</p>
 </div>
 </div>
 
 <div class="card">
-<img src="sapinhos.jpeg" alt="Ilha dos Sapinhos">
+<img src="sapinhos.jpeg">
 <div class="card-content">
-<h3> Sapinhos</h3>
-<p>
-Parada para almoço opcional em restaurantes tradicionais à beira-mar.
-</p>
+<h3>Sapinhos</h3>
+<p>Parada para almoço em restaurantes tradicionais.</p>
 </div>
 </div>
 
 <div class="card">
-<img src="tremembe.jpeg" alt="Cachoeira de Tremembé">
+<img src="tremembe.jpeg">
 <div class="card-content">
-<h3> Cachoeira de Tremembé</h3>
-<p>
-Uma das únicas cachoeiras do Brasil que deságua diretamente no mar.
-</p>
+<h3>Cachoeira de Tremembé</h3>
+<p>Uma das únicas cachoeiras que deságua no mar.</p>
 </div>
 </div>
 
 </div>
 
 </section>
+
+<!-- AVALIAÇÕES -->
+
+<section id="avaliacoes">
+
+<h2 class="section-title">
+Avaliações dos Clientes
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<div class="card-content avaliacao">
+⭐⭐⭐⭐⭐
+<p><br>“Passeio maravilhoso e muito seguro.”</p>
+<h3>João</h3>
+</div>
+</div>
+
+<div class="card">
+<div class="card-content avaliacao">
+⭐⭐⭐⭐⭐
+<p><br>“Paisagens lindas e excelente atendimento.”</p>
+<h3>Maria</h3>
+</div>
+</div>
+
+<div class="card">
+<div class="card-content avaliacao">
+⭐⭐⭐⭐⭐
+<p><br>“Voltaremos com certeza!”</p>
+<h3>Carlos</h3>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTATO -->
+
 <footer id="contato">
 
 <h2>Lanchas Maria Eduarda Turismo</h2>
@@ -343,20 +440,43 @@ Uma das únicas cachoeiras do Brasil que deságua diretamente no mar.
 <br>
 
 <p>
-<p>
-📞 <a href="tel:+5573981143616">73 98114-3616</a>
-<br>
-📞 <a href="tel:+5573999286507">73 99928-6507</a>
-</p>
-<br>
+📞
+<a class="telefone" href="tel:+5573981143616">
+73 98114-3616
+</a>
 
-<p>
+<br><br>
+
+📞
+<a class="telefone" href="tel:+5573999286507">
+73 99928-6507
+</a>
+</p>
+
+<br>
 <p>
 Instagram:
+<br><br>
+
 <a href="https://www.instagram.com/passeio_das_ilhas_camamu_ba/" target="_blank">
 @passeio_das_ilhas_camamu_ba
 </a>
+
+<br><br>
+
+<a href="https://www.instagram.com/passeio_das_ilhas_camamu_ba/"
+   target="_blank"
+   class="instagram-btn">
+   Ver Instagram
+</a>
+
 </p>
+
+
+
+© 2026 Lanchas Maria Eduarda Turismo
+</p>
+
 </footer>
 
 <a class="whatsapp" id="whats" href="#">
@@ -370,7 +490,7 @@ const numeros = [
 "5573999286507"
 ];
 
-document.getElementById("whats").onclick = () => {
+document.getElementById("whats").onclick = function(){
 
 const numero =
 numeros[Math.floor(Math.random()*numeros.length)];
@@ -386,4 +506,3 @@ window.open(
 
 </body>
 </html>
-
